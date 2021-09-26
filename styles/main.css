@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-image: url(../img/galaxy.jpg);
+}
+
+span {
+  color: #e0e0e0;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#logo {
+  width: 50%;
+}
+
+#container {
+  width: 950px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#background {
+  width: 950px;
+  height: 630px;
+  background-image: url(../img/galaxy-pixel3.png);
+  border-color: #ffe744;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+#button {
+  background-color: #ffe744;
+  padding: 4px 4px;
+  border-color: #000000;
+  box-shadow: 2px -2px 0px #f12c0b;
+  cursor: pointer;
+}
+
+#player {
+  width: 170px;
+  height: 66px;
+  position: absolute;
+  left: 8px;
+  top: 179px;
+  background-size: cover;
+  background-image: url(../img/space-nave.svg);
+}
+
+#alien1 {
+  width: 256px;
+  height: 66px;
+  position: absolute;
+  left: 689px;
+  top: 253px;
+  background-size: cover;
+  background-image: url(../img/alien1.svg);
+}
+
+#alien2 {
+  width: 180px;
+  height: 70px;
+  position: absolute;
+  left: 700px;
+  top: 447px;
+  background-image: url(../img/alien2.svg);
+  background-size: cover;
+}
+
+#satellite {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 100px;
+  top: 464px;
+  background-size: cover;
+  background-image: url(../img/satellite.png);
+}
+
+#start {
+  width: 350px;
+  height: 300px;
+  border-radius: 2px;
+  color: #e0e0e0;
+  background-color: #000000ab;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Animação do Player */
+
+.anima1 {
+  background-image: url(../imgs/helicoptero.png);
+  animation: play 0.7s steps(2) infinite;
+
+  -webkit-animation: play 0.7s steps(2) infinite;
+  -moz-animation: play 0.7s steps(2) infinite;
+  -ms-animation: play 0.7s steps(2) infinite;
+  -o-animation: play 0.7s steps(2) infinite;
+}
+
+@keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+@-moz-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+@-ms-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+@-o-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+/* Animação do Alien1 */
+
+.anima2 {
+  background-image: url(../img/alien1.png);
+  animation: play 0.7s steps(2) infinite;
+  -webkit-animation: play 0.7s steps(2) infinite;
+  -moz-animation: play 0.7s steps(2) infinite;
+  -ms-animation: play 0.7s steps(2) infinite;
+  -o-animation: play 0.7s steps(2) infinite;
+}
+
+#shot {
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  background-image: url(../img/shot.png);
+}
+
+#explosion1 {
+  width: 310px;
+  height: 270px;
+  position: absolute;
+}
+
+#explosion2 {
+  width: 310px;
+  height: 270px;
+  position: absolute;
+}
+
+#explosion3 {
+  width: 310px;
+  height: 270px;
+  position: absolute;
+}
+
+#score {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 590px;
+}
+
+h3 {
+  margin-left: 2px;
+  font-size: 13px;
+  color: #e0e0e0;
+  text-shadow: 4px 0px 0px #000;
+}
+
+#energy {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 750px;
+  top: 7px;
+}
+
+h1 {
+  color: #f12c0b;
+}
+
+#end {
+  width: 350px;
+  height: 200px;
+  border-radius: 2px;
+  color: #e0e0e0;
+  background-color: #000000ab;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}

@@ -3,20 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>Space Invaders</title>
+    <link rel="shortcut icon" href="img/space-icon.png" type="image/x-icon" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <div id="container">
       <div id="background">
         <div id="start">
-          <h1>Proteja o Satélite</h1>
+          <img src="img/space-logo.png" id="logo" />
           <p>
-            Utilize a tecla W para movimentar a nave para cima, a tecla S
-            para movimentar a nave para baixo e a tecla D para atirar.
+            Salve o Satélite utilizando a tecla W para movimentar a nave para
+            cima, a tecla S para movimentar a nave para baixo e a tecla D para
+            atirar.
           </p>
-          <p>Iniciar</p>
+          <button id="button" onclick="start()">Iniciar</button>
         </div>
       </div>
+      <a href="https://github.com/danielafarias/Space-Invaders" target="_blank"><span>© danielafarias, 2021</span></a>
     </div>
+
+    <audio src="sfx/som.mp3" preload="auto" id="sfxShot"></audio>
+    <audio src="sfx/explosao.mp3" preload="auto" id="sfxExplosion"></audio>
+    <audio src="sfx/musica_fundo.mp3" preload="auto" id="sfx"></audio>
+    <audio src="sfx/gameover.mp3" preload="auto" id="sfxGameover"></audio>
+    <audio src="sfx/resgate.mp3" preload="auto" id="sfxSaved"></audio>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
   </body>
 </html>
